@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0; 
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.col {
+    padding-bottom: 2%; 
+    flex-basis: 30%;
+    justify-content: space-between;
+}
+
+.col ul li {
+    list-style-type: none;
+    display: inline;
+}
+
+.col ul li button {
+    cursor: pointer;
+    padding: 5px 25px;
+    border: 2px solid #181a1c;
+    border-radius: 5px;
+    background-color: white;
+    color: #181a1c;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+
+.col ul li button:hover {
+    background-color: #181a1c;
+    color: white;
+}
+
+#counter {
+    font-size: 3rem;
+    letter-spacing: 2px;
+}
+
+#number {
+    color: black;
+    font-size: 5rem;
+}

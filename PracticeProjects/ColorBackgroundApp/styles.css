@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: white;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-area {
+    width: 50%;
+    height: 75px;
+    background-color: #181a1c;
+    border-radius: 5px;
+}
+
+#bg-text {
+    color: white;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+#bg-color-text {
+    color: white;
+    font-size: 24px;;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: normal;
+}
+
+.change-color {
+    cursor: pointer;
+    position: absolute;
+    top: 65%;
+    left: 45%;
+    background-color: #181a1c;
+    color: white;
+    border: 2px solid #181a1c;
+    border-radius: 5px;
+    padding: 10px 20px;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+
+.change-color:hover {
+    background-color: white;
+    color: #181a1c;
+}

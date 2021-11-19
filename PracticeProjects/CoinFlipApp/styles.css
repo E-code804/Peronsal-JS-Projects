@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main-div {
+    min-height: 100vh;
+    width: 100%;
+}
+
+#header {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 20px;
+    font-weight: normal;
+}
+
+#bottom {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.penny {
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 50%;
+    background-color: #c04106;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: 0.5s
+}
+
+.penny:hover {
+    width: 250px;
+    height: 250px;
+}
+
+.penny h1 {
+    position: absolute;
+    top: 49%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}

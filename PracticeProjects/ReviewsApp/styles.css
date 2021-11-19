@@ -1,0 +1,96 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#reviews-head {
+  color: #181a1c;
+  letter-spacing: 2px;
+}
+
+.underline {
+  width: 5%;
+  height: 3px;
+  background: rgb(31, 134, 252);
+}
+
+.review-box {
+  width: 35%;
+  height: 300px;
+  border-radius: 5px;
+  margin-top: 2%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  transition: 0.5s;
+}
+
+.review-box:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+.review-box img {
+  margin-top: 1%;
+  width: 45%;
+  border-radius: 50%;
+}
+
+.bg-circle {
+  position: absolute;
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+  background: rgb(31, 134, 252);
+  top: 30.5%;
+  left: 46.5%;
+  z-index: -1;
+}
+
+.quote-circle {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background: rgb(31, 134, 252);
+  top: 32%;
+  left: 46%;
+}
+
+.review-box h1 {
+  letter-spacing: 2px;
+  font-size: 18px;
+  color: #181a1c;
+}
+
+.review-box h3 {
+  font-size: 12px;
+  font-weight: normal;
+  color: rgb(31, 134, 252);
+  margin-bottom: 1%;
+}
+
+#left, #right {
+  cursor: pointer;
+  border: none;
+  background: none;
+  color: rgb(31, 134, 252);
+  font-size: 20px;
+  font-weight: bolder;
+  padding-right: 2%;
+  transition: 0.5s;
+}
+
+#left:hover, #right:hover {
+  color: rgb(121, 181, 250);
+}
