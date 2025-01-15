@@ -15,7 +15,7 @@ resetBtn.style.display = "none";
 
 let turn = 0;
 
-resetBtn.addEventListener("click", () => {
+function resetGame() {
   cells.forEach((cell) => {
     cell.innerHTML = "";
     cell.addEventListener("click", handleCellClick);
@@ -23,7 +23,7 @@ resetBtn.addEventListener("click", () => {
   playerTurn.innerHTML = "Player X's turn:";
   resetBtn.style.display = "none";
   turn = 0;
-});
+}
 
 function checkWin(c1, c2, c3) {
   return (
@@ -73,6 +73,11 @@ function handleCellClick(e) {
     playerTurn.innerHTML = `Player ${turn % 2 === 0 ? "X" : "O"}'s turn:`;
   }
 }
+
+// Reset the game
+resetBtn.addEventListener("click", () => {
+  resetGame();
+});
 
 // Attach the event listener to all cells
 cells.forEach((cell) => {
